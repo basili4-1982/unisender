@@ -5,7 +5,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/basili4-1982/unisender-go-api)](https://goreportcard.com/report/github.com/basili4-1982/unisender-go-api)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Официальный Go клиент для работы с API Unisender Go (транзакционные email-рассылки).
+Go клиент для работы с API Unisender Go (транзакционные email-рассылки).
 
 ## 📦 Установка
 
