@@ -1,4 +1,4 @@
-module github.com/basili4-1982/unisender-go-api
+module github.com/basili4-1982/unisender
 
 go 1.23.0
 

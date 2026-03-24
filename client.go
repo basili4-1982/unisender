@@ -6,10 +6,10 @@ import (
 
 	"resty.dev/v3"
 
-	"github.com/basili4-1982/unisender-go-api/config"
-	"github.com/basili4-1982/unisender-go-api/errors"
-	"github.com/basili4-1982/unisender-go-api/interfaces"
-	"github.com/basili4-1982/unisender-go-api/resources"
+	"github.com/basili4-1982/unisender/config"
+	"github.com/basili4-1982/unisender/errors"
+	"github.com/basili4-1982/unisender/interfaces"
+	"github.com/basili4-1982/unisender/resources"
 )
 
 // Client реализация клиента Unisender

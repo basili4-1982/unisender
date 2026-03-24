@@ -3,8 +3,8 @@ package interfaces
 import (
 	"context"
 
-	"github.com/basili4-1982/unisender-go-api/config"
-	"github.com/basili4-1982/unisender-go-api/models"
+	"github.com/basili4-1982/unisender/config"
+	"github.com/basili4-1982/unisender/models"
 )
 
 // EmailsResourceInterface интерфейс для работы с email

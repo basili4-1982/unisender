@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/basili4-1982/unisender-go-api/errors"
-	"github.com/basili4-1982/unisender-go-api/interfaces"
-	"github.com/basili4-1982/unisender-go-api/models"
+	"github.com/basili4-1982/unisender/errors"
+	"github.com/basili4-1982/unisender/interfaces"
+	"github.com/basili4-1982/unisender/models"
 )
 
 // TemplatesResource реализация для работы с шаблонами

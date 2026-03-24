@@ -3,7 +3,7 @@ package unisender
 import (
 	"time"
 
-	"github.com/basili4-1982/unisender-go-api/config"
+	"github.com/basili4-1982/unisender/config"
 )
 
 // DefaultConfig возвращает конфигурацию по умолчанию
@@ -14,7 +14,7 @@ func DefaultConfig() *config.Config {
 		RetryCount:    3,
 		RetryWaitTime: 1 * time.Second,
 		Debug:         false,
-		UserAgent:     "unisender-go-api/1.0.0",
+		UserAgent:     "unisender/1.0.0",
 	}
 }
 

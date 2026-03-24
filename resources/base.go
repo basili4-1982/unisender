@@ -7,7 +7,7 @@ import (
 	"github.com/google/go-querystring/query"
 	"resty.dev/v3"
 
-	"github.com/basili4-1982/unisender-go-api/config"
+	"github.com/basili4-1982/unisender/config"
 )
 
 // ClientGetter интерфейс для получения HTTP клиента и конфигурации

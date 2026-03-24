@@ -3,7 +3,7 @@ package resources
 import (
 	"context"
 
-	"github.com/basili4-1982/unisender-go-api/models"
+	"github.com/basili4-1982/unisender/models"
 )
 
 type WebhooksResource struct {
