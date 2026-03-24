@@ -156,28 +156,3 @@ func (r *SetSuppressionRequest) Validate() error {
 
 	return nil
 }
-
-// ValidateCreateEventDumpRequest валидирует запрос на создание выгрузки
-func (r *CreateEventDumpRequest) Validate() error {
-	if len(r.EventTypes) == 0 {
-		return fmt.Errorf("at least one event type is required")
-	}
-
-	if r.DateFrom.IsZero() {
-		return fmt.Errorf("date_from is required")
-	}
-
-	if r.DateTo.IsZero() {
-		return fmt.Errorf("date_to is required")
-	}
-
-	if r.DateFrom.After(r.DateTo) {
-		return fmt.Errorf("date_from must be before date_to")
-	}
-
-	if r.Format != "" && r.Format != "json" && r.Format != "csv" {
-		return fmt.Errorf("format must be 'json' or 'csv'")
-	}
-
-	return nil
-}
