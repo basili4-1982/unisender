@@ -17,7 +17,7 @@ type EmailsResourceInterface interface {
 type TemplatesResourceInterface interface {
 	Set(ctx context.Context, req *models.SetTemplateRequest) (*models.Template, error)
 	Get(ctx context.Context, templateID string) (*models.Template, error)
-	List(ctx context.Context, opts *models.ListOptions) ([]*models.Template, error)
+	List(ctx context.Context, opts *models.ListOptions) ([]models.Template, error)
 	Delete(ctx context.Context, templateID string) error
 }
 

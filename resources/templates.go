@@ -33,7 +33,7 @@ func (r *TemplatesResource) Set(ctx context.Context, req *models.SetTemplateRequ
 
 	var result models.TemplateResponse
 
-	err := r.ExecutePost(ctx, "/template/set", req, &result)
+	err := r.ExecutePost(ctx, "/template/set", req, &result, nil)
 	if err != nil {
 		return nil, err
 	}
@@ -62,7 +62,7 @@ func (r *TemplatesResource) Get(ctx context.Context, templateID string) (*models
 }
 
 // List возвращает список шаблонов
-func (r *TemplatesResource) List(ctx context.Context, opts *models.ListOptions) ([]*models.Template, error) {
+func (r *TemplatesResource) List(ctx context.Context, opts *models.ListOptions) ([]models.Template, error) {
 	var result models.TemplatesListResponse
 
 	err := r.executeGet(ctx, "/template/list", &result, &RequestOptions{
@@ -86,7 +86,9 @@ func (r *TemplatesResource) Delete(ctx context.Context, templateID string) error
 
 	path := fmt.Sprintf("/template/delete/%s", templateID)
 
-	err := r.executeDelete(ctx, path, nil)
+	var res string
+
+	err := r.ExecutePost(ctx, path, nil, &res, nil)
 	if err != nil {
 		return err
 	}
